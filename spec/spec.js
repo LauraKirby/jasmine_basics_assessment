@@ -3,18 +3,15 @@
 
 var grader = require("../grading_exercise.js")
 
-describe('the test score average function', function() {
-	it ('should take test scores and return the average', function (){
-	  expect(grader.average([90, 95, 87, 60])).toEqual(83);
-	}); 
+//letterGrader
+describe('the letterGrader function', function() {
+	it ('takes a test score and returns the equivalent letter grade', function(){
+		expect(grader.letterGrader(98)).toEqual('A');
+	});
 });
 
-//  will do this next, started on the average first by mistake 
-//letterGrader
-//describe('the letterGrader function',
-// 	it ('takes a test score and returns the equivalent letter grade', function (){
-// 	  expect(letterGrader.average(90).toEqual();
-// 	}); 
-// });
-
-
+describe('the test score average function', function() {
+	it ('should take test scores and return the average', function (){
+	  expect(grader.averageScore([90, 95, 87, 60])).toEqual(83);
+	}); 
+});
