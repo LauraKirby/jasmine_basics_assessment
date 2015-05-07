@@ -15,3 +15,9 @@ describe('the test score average function', function() {
 	  expect(grader.averageScore([90, 95, 87, 60])).toEqual(83);
 	}); 
 });
+
+describe('the test score median function', function() {
+	it ('should take test scores and return the median', function (){
+	  expect(grader.medianScore([52,80,80,86,94])).toEqual(80);
+	}); 
+});

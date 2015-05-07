@@ -21,10 +21,26 @@ module.exports = {
 			}
 	},
 	averageScore: function(arr){
-		sum = 0; 
+		var sum = 0; 
 		for (var i = 0; i<arr.length; i++) {
 			sum += parseInt(arr[i], 10); 
 		}
 		return sum/arr.length; 
+		},
+	medianScore: function(arr){
+		var length = arr.length;
+		var median; 
+		if (length%2 === 0) {
+			median = "nothing for now";
 		}
+		else if (length%2 !== 0){
+			arrLength = arr.length;
+			arrLengthHalf = arr.length/2;
+			Math.floor(arrLengthHalf)
+			medianIndex = arrLengthHalf +1; 
+			return medianIndex;
+		}
+	}
+
 }
+
